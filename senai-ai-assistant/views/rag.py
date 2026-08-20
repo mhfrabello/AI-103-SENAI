@@ -55,20 +55,33 @@ def show():
             st.session_state.index = None
         if "chunks" not in st.session_state:
             st.session_state.chunks = None
+        if "messages" not in st.session_state:
+            st.session_state.messages = []   
+        for message in st.session_state.messages:
+            if message["role"]== "system": continue
+            with st.chat_message(
+                message["role"]
+            ):
+                st.write(
+                    message["content"]
+                )
         question = st.chat_input(
-            "Faça uma pergunta sobre o documento"
-        )
+					"Faça uma pergunta sobre o documento"
+				)
         if question:
             with st.chat_message(
                 "user"
             ):
-                st.write(question)
-            answer = ask_question(
-                question,
-                index,
-                chunks
-            )
-            with st.chat_message(
-                "assistant"
-            ):
-                st.write(answer)
+                answer = ask_question(
+                    question,
+                    index,
+                    chunks,
+                    st.session_state.messages
+                )
+                st.session_state.messages.append(
+                            {
+                                "role": "assistant",
+                                "content": answer
+                            }
+                        )
+                st.rerun()

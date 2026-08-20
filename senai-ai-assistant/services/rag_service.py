@@ -30,7 +30,7 @@ def retrieve_context(
 
     return "\n".join(context_parts)
     
-def build_prompt(
+def build_system_prompt(
         context,
         question):
 
@@ -38,34 +38,39 @@ def build_prompt(
 Você deve responder
 utilizando apenas as
 informações do contexto.
+Se a resposta não estiver
+no contexto, informe que
+não encontrou a informação.
 
 Contexto:
 
 {context}
-
-Pergunta:
-
-{question}
-
-Se a resposta não estiver
-no contexto, informe que
-não encontrou a informação.
 """
 
 def ask_question(
         question,
         index,
-        chunks):
+        chunks,
+        context):
 
-    context = retrieve_context(
+    dados = retrieve_context(
         question,
         index,
         chunks
     )
+    if not any(item.get("role") == "system" for item in context):
+        prompt = build_system_prompt(
+            dados,
+            question
+        )
 
-    prompt = build_prompt(
-        context,
-        question
-    )
-
-    return chat(prompt)
+        context.append({
+                        "role": "system",
+                        "content": prompt
+                    })
+        
+    context.append({
+                    "role": "user",
+                    "content": question
+                })
+    return chat(question,context)

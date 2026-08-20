@@ -1,6 +1,9 @@
 # config/settings.py
 from dotenv import load_dotenv
 import os
+
+ENV_FILE = ".env"
+
 load_dotenv()
 LLM_PROVIDER = os.getenv("LLM_PROVIDER", "mock")
 LLM_MODEL=os.getenv("LLM_MODEL", "gpt-4o")
@@ -21,9 +24,19 @@ GEMINI_LLM_BASE_URL=os.getenv("GEMINI_LLM_BASE_URL", "https://generativelanguage
 GEMINI_LLM_MODEL=os.getenv("GEMINI_LLM_MODEL", "gemini-2.5-flash")
 GEMINI_LLM_TEMP=os.getenv("GEMINI_LLM_TEMP", 1.0)
 # Ollama
-OLLAMA_KEY=os.getenv("GEMINI_KEY", "qualquer-coisa")
+OLLAMA_KEY=os.getenv("OLLAMA_KEY", "qualquer-coisa")
 OLLAMA_LLM_BASE_URL=os.getenv("OLLAMA_LLM_BASE_URL", "http://localhost:8080/v1")
 OLLAMA_LLM_MODEL=os.getenv("OLLAMA_LLM_MODEL", "local")
 OLLAMA_LLM_TEMP=os.getenv("OLLAMA_LLM_TEMP", 1.0)
 # Embedding
 EMBEDDING_PROVIDER = os.getenv("EMBEDDING_PROVIDER","sentence")
+# ocr
+OCR_PROVIDER=os.getenv("OCR_PROVIDER","easyocr")
+# visão
+VISION_PROVIDER=os.getenv("VISION_PROVIDER","gemini")
+
+def get_setting(key, default=None):
+    return os.getenv(key, default)
+
+def gravar_setting(key,value):
+	  set_key(ENV_FILE,key,value)
