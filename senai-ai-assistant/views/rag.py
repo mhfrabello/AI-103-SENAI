@@ -23,6 +23,7 @@ from services.rag_service import (
 
 def show():
     st.title("📚 Consulta de Documentos")
+
     arquivo = st.file_uploader(
         "Selecione um PDF",
         type=["pdf"]

@@ -1,5 +1,5 @@
 #services/settings_service.py
-from dotenv import dotenv_values, set_key
+from dotenv import dotenv_values, set_key, load_dotenv
 
 ENV_FILE = ".env"
 
@@ -18,3 +18,5 @@ def save_settings(
         key,
         value
     )
+    # depois de salvar as keys recarregamos as variáveis
+    load_dotenv()

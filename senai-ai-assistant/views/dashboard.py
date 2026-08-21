@@ -35,9 +35,8 @@ Desenvolvimento de Agentes com IA"""},
             if ele["titulo"]=="Documentos":
                 documento = st.file_uploader(
                     "Envie um arquivo"
-            )
-
+                )
                 if documento:
                     st.success(
-                    "Arquivo enviado"
-                )
+                        "Arquivo enviado"
+                    )

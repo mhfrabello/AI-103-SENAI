@@ -5,7 +5,7 @@ from PIL import Image
 
 reader = easyocr.Reader(["pt"])
 
-def extract_text(uploaded_file):
+def extract_text(uploaded_file) -> str:
 
     image = Image.open(uploaded_file)
 

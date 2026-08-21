@@ -9,17 +9,15 @@ def show():
     if "messages" not in st.session_state:
         st.session_state.messages = [
             {
-            "role": "system",
-            "content": """Você é um agente prestativo,
- atencioso e suas respostas devem ser em 
- Português do Brasil, seja Objetivo nas respostas,
- evitando respostas muito longas."""
+                "role": "system",
+                "content": """Você é um agente prestativo, atencioso e 
+suas respostas devem ser em português do Brasil.
+Seja objetivo nas respostas evitando respostas muito longas."""
             }
-
         ]
     # Carregando as mensagens que estão armazenadas
     for message in st.session_state.messages:
-        if message["role"]=="system": continue
+        if message["role"]== "system": continue
         with st.chat_message(
             message["role"]
         ):
@@ -59,6 +57,3 @@ def show():
             }
         )
         st.rerun()
-        
-if __name__ == "__main__":
-    show()

@@ -2,7 +2,7 @@
 import streamlit as st
 # importando biblioteca de tratamento de datas
 from datetime import datetime
-from views import dashboard, chat, rag, ocr, settings
+from views import dashboard, chat, rag, ocr, vision, agents, settings
 
 st.set_page_config(
     page_title="SENAI AI Assistant",
@@ -13,9 +13,9 @@ menu = {
     1: {"titulo":"🏠 Dashboard", "pagina": dashboard.show },
     2: {"titulo":"🤖 IA Generativa","pagina": chat.show},
     3: {"titulo":"📄 RAG","pagina": rag.show},
-    4: {"titulo":"📋OCR","pagina": ocr.show},
-    5: {"titulo":"👁️Visão","pagina": None},
-    6: {"titulo":"🕵️‍♂️Agentes","pagina": None},
+    4: {"titulo":"📋 OCR","pagina": ocr.show},
+    5: {"titulo":"👁️ Visão","pagina": vision.show},
+    6: {"titulo":"🕵️‍♂️ Agentes","pagina": agents.show},
     7: {"titulo":"⚙ Configurações","pagina": settings.show},
 }
 st.logo("./assets/senai_logo.jpg")

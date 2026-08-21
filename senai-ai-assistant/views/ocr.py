@@ -1,5 +1,4 @@
 #views/ocr.py
-import tempfile
 import streamlit as st
 
 from services.ocr_service import (

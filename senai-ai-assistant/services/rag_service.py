@@ -51,19 +51,20 @@ def ask_question(
         question,
         index,
         chunks,
-        context):
+        context,
+        is_tool = False):
 
     dados = retrieve_context(
         question,
         index,
         chunks
     )
-    if not any(item.get("role") == "system" for item in context):
+    if not any(item.get("role") == "system" for item in context) or is_tool:
         prompt = build_system_prompt(
             dados,
             question
         )
-
+        context.clear()
         context.append({
                         "role": "system",
                         "content": prompt

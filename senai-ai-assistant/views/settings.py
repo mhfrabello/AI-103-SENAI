@@ -31,7 +31,7 @@ def show():
 		        settings["LLM_PROVIDER"]
 		    )
 		)    
-		#ocr
+	#ocr
     ocr_provider = st.selectbox(
         "OCR Provider",
         [
@@ -51,16 +51,19 @@ def show():
         [
             "gemini",
             "azure",
+            "groq",
             "ollama"
         ],
         index=[
             "gemini",
             "azure",
+            "groq",
             "ollama"
         ].index(
             settings["VISION_PROVIDER"]
         )
     )
+    # testando o click do botão
     if st.button(
         "💾 Salvar Configurações"
     ):
