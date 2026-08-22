@@ -32,3 +32,5 @@ opcao = st.sidebar.selectbox("Menu Lateral",
     )
 # Aqui chamamos a página se existir
 if not menu[opcao]["pagina"] == None: menu[opcao]["pagina"]()
+
+teste
