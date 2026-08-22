@@ -32,6 +32,12 @@ OLLAMA_LLM_TEMP=os.getenv("OLLAMA_LLM_TEMP", 1.0)
 EMBEDDING_PROVIDER = os.getenv("EMBEDDING_PROVIDER","sentence")
 # ocr
 OCR_PROVIDER=os.getenv("OCR_PROVIDER","easyocr")
+# fala
+STT_PROVIDER=os.getenv("STT_PROVIDER","groq")
+GROQ_STT_MODEL=os.getenv("GROQ_STT_MODEL","whisper-large-v3-turbo")
+TTS_PROVIDER=os.getenv("TTS_PROVIDER","edge")
+EDGE_TTS_VOICE=os.getenv("EDGE_TTS_VOICE","pt-BR-FranciscaNeural")
+LIVE_TALK_LANGUAGE=os.getenv("LIVE_TALK_LANGUAGE","pt-BR")
 # visão
 VISION_PROVIDER=os.getenv("VISION_PROVIDER","gemini")
 

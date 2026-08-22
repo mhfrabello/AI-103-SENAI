@@ -2,7 +2,7 @@
 import streamlit as st
 # importando biblioteca de tratamento de datas
 from datetime import datetime
-from views import dashboard, chat, rag, ocr, vision, agents, settings
+from views import dashboard, chat, rag, ocr, vision, agents, live_talk, settings
 
 st.set_page_config(
     page_title="SENAI AI Assistant",
@@ -16,7 +16,8 @@ menu = {
     4: {"titulo":"📋 OCR","pagina": ocr.show},
     5: {"titulo":"👁️ Visão","pagina": vision.show},
     6: {"titulo":"🕵️‍♂️ Agentes","pagina": agents.show},
-    7: {"titulo":"⚙ Configurações","pagina": settings.show},
+    7: {"titulo":"🎙️ Conversa ao Vivo", "pagina": live_talk.show},
+    8: {"titulo":"⚙ Configurações", "pagina": settings.show},
 }
 st.logo("./assets/senai_logo.jpg")
 # Menu Lateral
@@ -32,5 +33,3 @@ opcao = st.sidebar.selectbox("Menu Lateral",
     )
 # Aqui chamamos a página se existir
 if not menu[opcao]["pagina"] == None: menu[opcao]["pagina"]()
-
-teste
