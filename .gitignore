@@ -226,3 +226,5 @@ mslearn-ai-information-extraction
 estudos/material/slides/
 # Perguntas de simulados de terceiros (não publicar)
 estudos/material/simulados/
+# Configurações pessoais do Claude Code
+.claude/settings.local.json
