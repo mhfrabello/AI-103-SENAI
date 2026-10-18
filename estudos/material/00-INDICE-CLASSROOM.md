@@ -80,7 +80,15 @@ Extraído em 2026-10-18.
 - [Aula 05 — RAG, OCR e configurações](https://app.notion.com/p/Aula-05-Ajustes-e-OCR-3c1d3b9fea09803ba61fd68e16ac1cda)
 - [Aula 06 — Finalização](https://app.notion.com/p/Aula-06-Finaliza-o-do-projeto-3c2d3b9fea0980eabae2e5802a5c20fd)
 
+## Mural e Drive (verificado em 2026-10-18)
+- Mural: só avisos de materiais novos + links do e-mail educacional SESI/SENAI
+  (reset de senha: https://pess.portalsesisp.org.br/ · webmail: http://mail.sesisenaispedu.org.br/).
+- **Minhas regiões permitidas no Azure for Students** (política da assinatura, postei no mural em 7/ago):
+  `mexicocentral`, `eastus`, `northcentralus`, `canadacentral`, `southcentralus` — criar recursos Foundry só nelas.
+- Pasta da turma no Drive: vazia.
+
 ## Simulado final (Google Forms)
+Cópias das perguntas em `simulados/` (fora do git). Formulários estão na conta Gmail pessoal.
 - https://forms.gle/GRjpXhD3DnWDjmoD6
 - https://forms.gle/jMngt6Bpx2QQaww1A
 - https://forms.gle/sVGKeagcr8USCWrf6

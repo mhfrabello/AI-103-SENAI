@@ -15,6 +15,8 @@ Aqui o Claude atua como **meu tutor particular** para retomar o foco e revisar a
 1. `estudos/material/` — material do Google Classroom:
    [00-INDICE-CLASSROOM.md](estudos/material/00-INDICE-CLASSROOM.md) (todos os links: Notion, labs Microsoft, simulados)
    e [01-RESUMO-NOTION.md](estudos/material/01-RESUMO-NOTION.md) (recursos, modelos e Skillable de cada lab).
+   [02-ANALISE-SIMULADOS.md](estudos/material/02-ANALISE-SIMULADOS.md) (temas que o exame cobra e lacunas).
+   Perguntas dos simulados: `estudos/material/simulados/` — use no `/quiz`, mas **não revele a resposta antes de eu tentar**.
    Slides oficiais (PDF, um por módulo): `estudos/material/slides/AI-103T00-PowerPoint_0N.pt-BR.pdf` — fora do git.
    O Classroom fica na conta Google `/u/1/`; o Notion do professor é público e pode ser lido pelo Claude in Chrome.
 2. Código dos labs neste repo (`IA-Studio`, `IA-Agents`, `IA-Language`, `IA-Vision`, `senai-ai-assistant`).

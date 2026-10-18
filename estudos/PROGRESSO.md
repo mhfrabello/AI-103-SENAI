@@ -6,6 +6,11 @@
 
 ---
 
+## 2026-10-18 — Mural, Drive e simulados
+- Mural: só avisos; anotei minhas 5 regiões permitidas no Azure for Students (ver índice). Drive da turma: vazio.
+- 3 simulados copiados (sem enviar) → `material/simulados/`. Análise em `material/02-ANALISE-SIMULADOS.md`.
+- Maior lacuna para a certificação: **observabilidade** (~1/5 das questões). Criada a "Trilha Certificação" (C1–C7) no plano.
+
 ## 2026-10-18 — Material do Classroom
 - Lido via Claude in Chrome: índice completo de links e Notion do professor (módulos 1–4 + 6 aulas de Streamlit).
 - Labs que nunca fiz: 1.4, 1.6, 2.4 (Foundry IQ), 2.6, 3.3–3.7, 4.5, 4.7, 4.8 — entraram no plano.

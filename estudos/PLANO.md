@@ -1,6 +1,6 @@
 # Plano de estudos — retomada AI-103
 
-**Premissa:** 3 sessões/semana de ~1h → 28 sessões ≈ **9–10 semanas**. Ajuste o ritmo se precisar.
+**Premissa:** 3 sessões/semana de ~1h → 35 sessões (28 do curso + 7 da trilha de certificação) ≈ **12 semanas**. Ajuste o ritmo se precisar.
 Cada sessão: teoria (15 min) → ler código (15 min) → rodar (15 min) → exercício (15 min).
 Material: [índice do Classroom](material/00-INDICE-CLASSROOM.md) · [resumo do Notion](material/01-RESUMO-NOTION.md)
 
@@ -44,6 +44,15 @@ Legenda: `[ ]` a fazer · `[~]` em andamento · `[x]` feito · *(portal)* = feit
 - [ ] S23. Lab 4.4/4.5/4.6 — Content Understanding (portal + API)
 - [ ] S24. Labs 4.7/4.8 *(novos, opcionais — custo AI Search)* — Document Intelligence e knowledge mining
 - [ ] S25. Revisão Módulo 4 + `/quiz visao`
+
+## Trilha Certificação AI-103 (lacunas dos simulados — ver [análise](material/02-ANALISE-SIMULADOS.md))
+- [ ] C1. Observabilidade I — Application Insights + OpenTelemetry + tracing de agentes
+- [ ] C2. Observabilidade II — métricas, logs de diagnóstico, cota/429, custos
+- [ ] C3. Segurança — prompt shields (prompts × documentos), filtros de conteúdo, PII
+- [ ] C4. Avaliação — evaluators (groundedness, RAG), temperature/top-p, system message × few-shot
+- [ ] C5. Azure AI Search para agentes — retrieval, skills de indexação, conexões/credenciais
+- [ ] C6. Tools OpenAPI 3.0 + connections com API key
+- [ ] C7. Practice Assessment oficial da Microsoft + refazer os 3 simulados do curso
 
 ## Fechamento — Projeto final (`senai-ai-assistant`)
 - [ ] S26. Arquitetura multi-provider (providers → services → tools → views), Aulas 01–03
